@@ -1,0 +1,30 @@
+<html>
+<head>
+<script type="text/javascript">
+function f()
+{
+var x=document.f1.t1.value;
+var y=document.f1.t2.value;
+var z=document.f1.t3.value;
+var ph=document.f1.t4.value;
+if(x==""||y==""||z==""||ph=="")
+alert("all fields required");
+if(y==""||y=="null")
+alert("enter passwrd");
+if(y!=z)
+alert("passwrd do not match");
+else
+alert("success");
+</script>
+</head>
+<body bgcolor="grey">
+<form name=f1 onsubmit='return f()'>
+Name:<input type="text" name="t1"><br>
+Passwrd:<input type="Passwrd" name="t2"><br>
+Confirm passwrd:<input type="Passwrd" name="t3"><br>
+Ph no:<input type="text" name="t4"><br>
+<input type="submit" name="submit" value="submit">
+<input type="reset" name="reset" value="clear">
+</form>
+</body>
+</html>

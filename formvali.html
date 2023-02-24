@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>form</title>
+</head>
+<script type="text/javascript">
+function validate()
+{
+if(document.myForm.Name.value="")
+{
+alert("please provide your name!!");
+document.myForm.Name.focus();
+return false;
+}
+
+if(document.myForm.Email.value="")
+{
+alert("please provide your name!!");
+document.myForm.Email.focus();
+return false;
+}
+
+if(document.myForm.Zip.value="")||isNaN(document.myForm.Zip.value)||(document.myForm.Zip.value.length!=5)
+{
+alert("please provide zip in #####");
+document.myForm.Zip.focus();
+return false;
+}
+
+if(document.myForm.Country.value="")
+{
+alert("please provide your country!!");
+document.myForm.Country.focus();
+return false;
+}
+
+</script>
+<body>
+<form name="myForm">
+<table align="center" cellpadding="5x">
+
+<tr>
+<td>Name:</td>
+<td><input type="text" name="Name">
+</td></tr>
+
+<tr>
+<td>Email:</td>
+<td><input type="text" name="Email">
+</td>
+</tr>
+
+<tr>
+<td>Zip:</td>
+<td><input type="text" name="Zip">
+</td>
+</tr>
+
+<tr>
+<td>Country:</td>
+<td>
+<select name="Country">
+<option>india</option>
+<option>russia</option>
+<option>uae</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td><input type="button" value="submit" onclick="validate()">
+</td></tr>
+</body>
+</html>
+
+
+

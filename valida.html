@@ -1,0 +1,84 @@
+<html>
+<head>
+<script type="text/javascript">
+function validate()
+{
+if(document.myForm.Name.value="")
+{
+alert("please provide name!!");
+document.myForm.Name.focus();
+return false;
+}
+
+var x=document.myForm.Email.value;
+var at=x.indexOf("@");
+var dot=x.lastIndexOf(".");
+if(x==""||at<1||dot<at+2)
+{
+alert("please provide email!!");
+document.myForm.Email.focus();
+return false;
+}
+if(document.myForm.Pin.value=="")||(document.myForm.Pin.value)||(document.myForm.Pin.value.length!=5)
+{
+alert("please provide pin in #####");
+document.myForm.Pin.focus();
+return false;
+}
+
+if(document.myForm.State.value="")
+{
+alert("please provide state!!");
+document.myForm.State.focus();
+return false;
+}
+
+return(alert("submitted"));
+}
+</script>
+</head>
+<body>
+<form name="myForm">
+<table align="center" cellpadding="5x">
+<tr>
+<td>Name:</td>
+<td><input type="text" name="Name">
+</td>
+</tr>
+
+<tr>
+<td>Email:</td>
+<td><input type="text" name="Email">
+</td>
+</tr>
+
+<tr>
+<td>Pin:</td>
+<td><input type="number" name="Pin">
+</td>
+</tr>
+
+<tr>
+<td>State:</td>
+<td>
+<select name="State">
+<option>select state</option>
+<option>kerala</option>
+<option>tn</option>
+<option>bang</option>
+</select></td>
+</tr>
+
+<tr>
+<td><input type="submit" value="submit">
+</td>
+</tr>
+</table>
+</body>
+</html>
+
+
+
+
+
+re
